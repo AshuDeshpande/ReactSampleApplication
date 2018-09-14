@@ -1,0 +1,29 @@
+{
+  "name": "react_redux_sample_application",
+  "version": "1.0.0",
+  "description": "This is sample react redux application",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build",
+    "build": "webpack -d && copy src\\index.html dist\\index.html && webpack-dev-server --content-base src/ --inline --hot --history-p",
+    "build:prod": "webpack -d && copy src\\index.html dist\\index.html"
+  },
+  "author": "Ashish Deshpande",
+  "license": "ISC",
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.1",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "webpack": "^4.18.0",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8"
+  }
+}
